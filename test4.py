@@ -8,3 +8,4 @@ for i  in range(100,999,1) :
         list("num")
         print(num)
         break
+    break

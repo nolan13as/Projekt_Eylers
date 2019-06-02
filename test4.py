@@ -1,11 +1,14 @@
 ### Задание 4 ###
 
 num=0
+Sps=[]
 
-for i  in range(100,999,1) :
-    for k in range(100,999,1):
+for i  in range(500,999,1) :
+    for k in range(500,999,1):
         num =i*k
-        list("num")
-        print(num)
+        nam=str(num)
+        Sps=list(nam)
+        print(Sps)
+
         break
     break

@@ -1,20 +1,17 @@
 ### Задание 4 ###
 
-num=0
-Sps=[]
-NumMax=0
-p="Это самое большое число Палидром"
-n="Это самое большое число Палидром!!!"
-for i  in range(100,999,1) :
-    for k in range(100,999,1):
-        num=i*k
-        nam=str(num)
-        Sps=list(nam)
-        if Sps[0]==Sps[-1] and Sps[1]==Sps[-2] and Sps[2]==Sps[-3]:
-            if NumMax<num:
-                NumMax=num
-                print(NumMax)
-                print(p)
-            else:
-                print(num)
-                print(n)
+num=0                                   ### Пустая ячейка для записи данных
+Sps=[]                                  ### пустой список
+NumMax=0                                ### Тоже пустая ячейка
+p="Это самое большое число Палидром"    ###
+n="Это самое большое число Палидром!!!" ###
+for i  in range(100,999,1) :            ### эти две строки для множителей
+    for k in range(100,999,1):          ###
+        num=i*k                         ### произведение
+        nam=str(num)                    ### перерасчет int в str
+        Sps=list(nam)                   ### запись этого числа в список каждым элементом
+        if Sps[0]==Sps[-1] and Sps[1]==Sps[-2] and Sps[2]==Sps[-3]: ### проверка элементов
+            if NumMax<num:              ### запись большего числа
+                NumMax=num              ###
+                print(NumMax)           ### принт большего числа
+                print(p)                ###
